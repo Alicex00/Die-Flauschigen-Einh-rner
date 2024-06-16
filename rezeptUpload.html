@@ -1,0 +1,66 @@
+{% extends "base.html" %} {% block title %}Uploade dein Rezept{% endblock %} {% block
+    content %}
+    <form method="POST">
+    <h3 align="center">Uploade dein Rezept</h3>
+    <div class="form-group">
+    <label for="name">Rezept Name</label>
+    <input
+    type="text"
+    class="form-control"
+    id="name"
+    name="name"
+    placeholder="Rezeptname"
+    />
+    <label for="zutat">Zutaten</label>
+    <input
+    type="text"
+    class="form-control"
+    id="zutat"
+    name="zutat"
+    placeholder="Zutaten"
+    />
+    </div>
+    <div class="form-group">
+    <label for="schwierigkeit">Schwierigkeit</label>
+    <input
+    type="text"
+    class="form-control"
+    id="schrierigkeit"
+    name="schrierigkeit"
+    placeholder="Schwierigkeit"
+    />
+    </div>
+    <div class="form-group">
+    <label for="zeit">Zeit</label>
+    <input
+    type="integer"
+    class="form-control"
+    id="zeit"
+    name="zeit"
+    placeholder="Bearbeitungszeit"
+    />
+    </div>
+    <div class="form-group">
+    <label for="kategorie">Kategorie</label>
+    <input
+    type="text"
+    class="form-control"
+    id="kategorie"
+    name="kategorie"
+    placeholder="Kategorie"
+    />
+    </div>
+    <div class="form-group">
+    <label for="anleitung">Anleitung</label>
+    <input
+    type="text"
+    class="form-control"
+    id="anleitung"
+    name="anleitung"
+    placeholder="Anleitung"
+    />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    {% endblock %}
